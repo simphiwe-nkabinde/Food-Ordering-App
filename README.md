@@ -38,3 +38,7 @@ The following .java files will require this change: Customer, Driver, Invoice, O
 - type in any special preparation instructions in the text box at the bottom.
 - click the order button to make your order.
 - A text file will open up in a seperate window containing your invoice. The invoice contains you personal info, order info and information about the nearest driver to your location who will be delivering your food
+
+![picture](foodquick1.png)
+![picture](foodquick2.png)
+![picture](foodquick3.png)
