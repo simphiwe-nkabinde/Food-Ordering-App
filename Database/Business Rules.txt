@@ -1,0 +1,6 @@
+Business Rules
+
+- Location(City) of Restuarant and Driver must match Customers Location(City)
+- Driver with the lowest load of the correct Location(City) must be assigned to a customer
+- Customer can only order form 1 Restuarant per order
+- When a driver is assigned, their load value must be incremented by 1

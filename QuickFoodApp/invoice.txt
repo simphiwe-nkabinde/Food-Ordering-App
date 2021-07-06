@@ -1,0 +1,26 @@
+QuickFood Invoice
+
+Customer: John Powell
+Email: johnpowell@csplot.com
+Phone Number: 0927364758
+City: Cape Town
+
+Order ID: 1033
+2021-03-31 21:30:00.0
+
+You have ordered the following from Chillie Zone in Cape Town: 
+
+
+2 x chillie footlong (R66.7000)
+4 x spicy beef wrap (R54.8000)
+
+Special Preparation Instructions: make it extra spicy
+Total: R121.5000
+
+Julie Carty is nearest to the restaurant and so he will be
+delivering your order to you at: 
+1552 Snagburg street Rubendayle
+
+If you need to contact the restaurant, their number is 0213346499.
+
+Enjoy your meal!

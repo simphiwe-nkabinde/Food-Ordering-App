@@ -1,0 +1,58 @@
+User Defined Functions, Stored Procedures and Triggers
+
+UDFs:
+-------------------------------------------------------
+1. fn_get_custid
+	definition: retreives CustomerID from [Customers] Table
+	Returns: CustomerID int
+	input parameters: @name varchar(20), @phone char(10), @address varchar(40)
+
+2. fn_get_orderid
+	definition: gets the latest orderid of a customer
+	Returns: OrderID int
+	input parameters: @custid int
+
+Stored Procedures:
+--------------------------------------------------------
+1. sp_insert_cust
+	defintion: inserts new customer row in [Customers] Table
+	input parameters: @name varchar(20), @phone char(10), @address varchar(40), @city varchar(20), @email varchar(40)
+
+2. sp_insert_orderheader
+	definition: inserts new order into [Order Header] table
+	input parameters: @custid int, @restid char(5), @driverid int, @prep_instr varchar(50)
+
+3. sp_insert_orderitem
+	definition: inserts new order item into [Order Item Details] table
+	input parameters: @orderid int, @itemid int, @qty int
+
+4. sp_incr_driverload
+	definition: incren=ments the drivers load by 1
+	input parameter: @driverid int
+
+
+Triggers:
+--------------------------------------------------------
+1. tr_set_itemNamePrice
+	definition: sets the Name and Unit Price of an item in [Order Item Details] table using inserted ItemID.
+	 Values are retreived from [Items] table using ItemID.
+	Table: [Order Item Details]
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+

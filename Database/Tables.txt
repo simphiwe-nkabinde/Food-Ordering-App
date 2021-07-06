@@ -1,0 +1,64 @@
+TABLES
+
+Entities:
+-Customers
+-Drivers
+-Restuarants
+-Items
+-[Order Header]
+-[Order Item Details]
+
+Attributes & Properties:
+
+Customers
+----------------------------
+CustomerID	pk int IDENNTITY(1,1)
+Name		varchar(20)
+Phone		char(10)
+Address		varcahr(40)
+City		varvhar(20)
+Email		varchar(40)
+
+
+Drivers
+-----------------------------
+DriverID 	pk int IDENTITY(1,1)
+Name		varcahr(20)
+City		varchar(20)
+Load		int
+
+
+Restaurants
+------------------------------
+RestaurantID	pk char(5)
+Name		varchar(20)
+City		varchar(20)
+Phone		char(10)
+
+
+Items
+------------------------------
+ItemID		pk int IDENTITY(1,1)
+Name		varchar(20)
+Price		smallmoney
+RestaurantID	fk char(5)
+
+
+Order Header
+-------------------------------
+OrderID		pk int IDENTITY(1000,1)
+CustomersID	fk int
+DateTime	smalldatetime DEFAULT(getdate())
+RestaurantID	fk char(5)
+DriverID	fk int
+Prep Instr	varchar(50) NULL
+
+
+Order Item Details
+--------------------------------
+OrderID		fk int
+ItemID		fk int
+Item Name	varchar(20) NULL
+Unit Price	smallmoney NULL
+qty		smallint
+Total Price	AS [Unit Price]*qty
